@@ -1,9 +1,9 @@
 'use strict'
 const modelSearch=require('../models/modelSearch.js');
 const search=(req)=>{
-	var alumno=modelSearch(); 
+	var result=modelSearch(); 
 	var nombre = 'Viridiana';
-	result=alumno.filter((alumno) => { 
+	result=result.filter((alumno) => { 
 		if(alumno.nombre===nombre)
 			{return result;}
 
